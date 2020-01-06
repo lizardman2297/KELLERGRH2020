@@ -7,7 +7,6 @@ namespace KELLERGRH2020
 {
     public class Collaborateur
     {
-
         private int lId;
         private string leNom;
         private string lePrenom;
@@ -15,7 +14,7 @@ namespace KELLERGRH2020
         private string leCp;
         private string laVille;
         private DateTime laDateEmbauche;
-
+        private List<Poste> lesPostes;
 
         public Collaborateur()
         {
@@ -23,18 +22,24 @@ namespace KELLERGRH2020
 
         public Collaborateur(int unId, string unNom, string unPrenom, string uneAdresse, string unCp, string uneVille, DateTime uneDateEmbauche)
         {
-            // TODO 
+            lId = unId;
+            leNom = unNom;
+            lePrenom = unPrenom;
+            lAdresse = uneAdresse;
+            leCp = unCp;
+            laVille = uneVille;
+            laDateEmbauche = uneDateEmbauche;
+            lesPostes = new List<Poste>();
+
+
         }
 
-
-
-        public string Id
+        public int Id
         {
             get { return lId; }
             set
             { lId = value; }
         }
-
 
         public string Nom
         {
@@ -78,9 +83,11 @@ namespace KELLERGRH2020
             { laDateEmbauche = value; }
         }
 
-       
-
- 
-
+        public List<Poste> _Postes
+        {
+            get { return lesPostes; }
+            set
+            { lesPostes = value; }
+        }
     }
 }

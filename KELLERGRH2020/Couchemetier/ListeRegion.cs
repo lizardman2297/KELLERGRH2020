@@ -7,7 +7,6 @@ namespace KELLERGRH2020
 {
     public static class ListeRegion
     {
-
         private static List<Region> lesRegions;
 
         public static List<Region> getRegions()
@@ -21,7 +20,7 @@ namespace KELLERGRH2020
 
         public static Region getRegionByLibelle(string unLibelle)
         {
-            return //TO DO
+            return lesRegions.FirstOrDefault(r => r.Libelle == unLibelle);
         }
 
         public static Region getRegionByCode(int unCode)

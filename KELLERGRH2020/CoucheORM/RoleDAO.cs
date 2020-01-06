@@ -13,9 +13,23 @@ namespace KELLERGRH2020
 
         public static List<Role> getRoles()
         {
-            
-           // TODO
-
+            SqlCommand cmd;
+            SqlDataReader jeu;
+            lesRoles = new List<Role>();
+            Role unRole;
+            SqlConnection ctn = new SqlConnection(Connexion.getChaine());
+            ctn.Open();
+            string req = "select * from ROLE";
+            cmd = new SqlCommand(req, ctn);
+            jeu = cmd.ExecuteReader();
+            while (jeu.Read())
+            {
+                unRole = new Role(int.Parse(jeu[0].ToString()), jeu[1].ToString());
+                lesRoles.Add(unRole);
+            }
+            jeu.Close();
+            ctn.Close();
+            return lesRoles;
         }
     }
 }

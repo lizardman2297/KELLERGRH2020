@@ -11,26 +11,25 @@ namespace KELLERGRH2020
     {
         private static List<Collaborateur> lesCollaborateurs;
 
-        
-
         // TODO 
 
-        //public static List<Collaborateur> getLesCollaborateurs()
-        //{
-        //}
-
-  
-        public static Collaborateur getCollaborateurById(string unId)
+        public static List<Collaborateur> getLesCollaborateurs()
         {
-            // TODO 
+            if (lesCollaborateurs == null)
+            {
+                lesCollaborateurs = CollaborateurDAO.getCollaborateurs();
+            }
+            return lesCollaborateurs;
+        }
+
+        public static Collaborateur getCollaborateurById(int unId)
+        {
+            return lesCollaborateurs.FirstOrDefault(c => c.Id == unId);
         }
 
         public static List<Collaborateur> getCollaborateurByNomPrenom(string unNom, string unPrenom)
         {
-            // TODO 
+            return lesCollaborateurs.ToList();
         }
-
-
-
     }
 }

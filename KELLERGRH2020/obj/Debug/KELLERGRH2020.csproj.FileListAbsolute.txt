@@ -5,3 +5,13 @@ C:\AAATRAVAIL18-19\SIO2\PPE18-19\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH
 C:\AAATRAVAIL18-19\SIO2\PPE18-19\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH2020.csproj.GenerateResource.Cache
 Z:\2018\New folder\KELLERGRH2020\KELLERGRH2020\bin\Debug\KELLERGRH2020.exe.config
 X:\2TSIO-SLAM\SLAM4\KELLERGRH2020\KELLERGRH2020\bin\Debug\KELLERGRH2020.exe.config
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\bin\Debug\KELLERGRH2020.exe.config
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH2020.csprojResolveAssemblyReference.cache
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\obj\Debug\KellerEleveWForm.FrmAccueil.resources
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH2020.FrmCollaborateurs.resources
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH2020.Properties.Resources.resources
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH2020.csproj.GenerateResource.Cache
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\bin\Debug\KELLERGRH2020.exe
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\bin\Debug\KELLERGRH2020.pdb
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH2020.exe
+C:\Users\fariello\Desktop\KELLERGRH2020\KELLERGRH2020\obj\Debug\KELLERGRH2020.pdb

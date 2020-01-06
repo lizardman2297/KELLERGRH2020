@@ -7,7 +7,6 @@ namespace KELLERGRH2020
 {
     public static class ListeSecteurs
     {
-
         private static List<Secteur> lesSecteurs;
 
         public static List<Secteur> getSecteurs()
@@ -21,12 +20,15 @@ namespace KELLERGRH2020
 
         public static Secteur getSecteurByCode(int unCode)
         {
-            return lesSecteurs.FirstOrDefault(r => r.Code == unCode);
+            return lesSecteurs.FirstOrDefault(s => s.Code == unCode);
         }
 
         public static Secteur getSecteurByLibelle(string unLibelle)
         {
-            return // TODO
+            return lesSecteurs.FirstOrDefault(s => s.Libelle == unLibelle);
         }
     }
 }
+// while !jeu.read() {
+// idCollab courant = jeu(n) 
+//while idCollabcourant = jeu(n)

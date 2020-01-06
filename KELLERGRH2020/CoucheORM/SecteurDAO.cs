@@ -16,7 +16,7 @@ namespace KELLERGRH2020
         {
             if (lesSecteurs == null)
             {
-                
+
                 SqlCommand cmd;
                 SqlDataReader jeu;
                 lesSecteurs = new List<Secteur>();
@@ -34,7 +34,7 @@ namespace KELLERGRH2020
                 jeu.Close();
                 foreach (Secteur s in lesSecteurs)
                 {
-                    string req2 = "select * from REGION where SecteurRegion = '" + s.Code + "'";
+                    string req2 = "select * from REGION where codeSecteur = '" + s.Code + "'";
                     cmd = new SqlCommand(req2, ctn);
                     jeu = cmd.ExecuteReader();
                     while (jeu.Read())

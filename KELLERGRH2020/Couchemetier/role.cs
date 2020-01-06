@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace KELLERGRH2020
 {
-    public class Region
+    public class Role
     {
         private int leCode;
         private string leLibelle;
 
-        public Region(int unCode, string unLibelle)
+        public Role(int unCode, string unLibelle)
         {
             leCode = unCode;
             leLibelle = unLibelle;
