@@ -20,7 +20,7 @@ namespace KELLERGRH2020
             Collaborateur unCollaborateur;
             SqlConnection ctn = new SqlConnection(Connexion.getChaine());
             ctn.Open();
-            string req = "select * from COLLABORATEUR";
+            string req = "SELECT * FROM COLLABORATEUR";
             SqlCommand cmd = new SqlCommand(req, ctn);
             SqlDataReader jeu = cmd.ExecuteReader();
             while (jeu.Read())

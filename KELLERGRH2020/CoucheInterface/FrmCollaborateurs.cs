@@ -30,7 +30,9 @@ namespace KELLERGRH2020
             TreeNode second;
             TreeNode troisieme;
             Poste p;
+
             // TODO : Requete LINQ pour obtenir les secteurs
+
             var req = from secteur in ListeSecteurs.getSecteurs()
                       select secteur;
             var req2 = from collab in ListeCollaborateurs.getLesCollaborateurs()
@@ -53,7 +55,6 @@ namespace KELLERGRH2020
                             if (p.Region == r.Code)
                             {
                                 n = troisieme.Nodes.Add(c.Prenom + " " + c.Nom);
-
                             }
                         }
                     }
