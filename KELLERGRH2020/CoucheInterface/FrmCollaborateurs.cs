@@ -74,7 +74,7 @@ namespace KELLERGRH2020
             if (words.Length == 2)
             {
                 // traitement secteur
-                n.Nodes[0].Remove();
+                //n.Nodes[0].Remove();
                 Secteur s = ListeSecteurs.getSecteurByLibelle(n.Text);
             }
             else
@@ -82,13 +82,14 @@ namespace KELLERGRH2020
                 if (words.Length == 3)
                 {
                     // traitement région
-                    Region r = ListeRegion.getRegionByLibelle(n.Text);
                     var req = from region in ListeRegion.getRegions()
                               select region;
+                    Region r = ListeRegion.getRegionByLibelle(n.Text);
+                    
                     // suppression du noeud fictif
                     if (req.ToList().Count > 0)
                     {
-                        n.Nodes[0].Remove();
+                        //n.Nodes[0].Remove();
                     }
                 }
             }
